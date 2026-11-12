@@ -1,0 +1,13 @@
+{
+  "name": "holdora",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Holdora: patience, rewarded. A Solana token site.",
+  "license": "MIT",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "gates": "node scripts/gates.mjs",
+    "serve": "node scripts/serve.mjs"
+  }
+}

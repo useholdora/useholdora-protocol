@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Holdora</title>
+<meta name="description" content="Holdora is a Solana token for people who stay. Live market board, contract slot and confirmed links in one place.">
+<meta name="theme-color" content="#07644f">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="apple-touch-icon" href="assets/icon-64.png">
+<link rel="preload" as="image" href="assets/logo-96.png">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/styles.css">
+<meta property="og:title" content="Holdora">
+<meta property="og:image" content="assets/logo-512.png">
+</head>
+<body>
+<a class="skip" href="#market">Jump to the board</a>
+<div class="progress" aria-hidden="true"><i></i></div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="assets/logo-96.png" width="34" height="34" alt="Holdora logo"><span>Holdora</span></a>
+    <nav class="nav" aria-label="Sections"><a href="#market">Board</a><a href="#how">How it works</a><a href="#token">Facts</a></nav>
+    <div class="social" id="slot-social"><!--@social--></div>
+  </div>
+</header>
+
+<div id="slot-ca"><!--@ca--></div>
+
+<main id="top">
+  <div class="hero">
+    <div class="layer mesh" data-depth="0.15" aria-hidden="true"></div>
+    <div class="layer gridlines" data-depth="0.3" aria-hidden="true"></div>
+    <div class="layer rings" data-depth="0.6" aria-hidden="true"></div>
+    <div class="layer swoosh" data-depth="0.45" aria-hidden="true"></div>
+    <div class="wrap hero-in">
+      <div>
+        <span class="pill rv" data-state="loading"><i class="dot"></i><span class="pill-text" role="status">Loading market</span></span>
+        <h1 class="rv">Patience, <em>rewarded.</em></h1>
+        <p class="lead rv">Holdora is a Solana token made for the people who stay put. Check the live board, copy the contract once it lands, and watch each detail appear as soon as it is confirmed.</p>
+        <div class="cta rv"><a class="btn btn-main" href="#market">Open the board</a><a class="btn btn-ghost" href="#how">See the idea</a></div>
+      </div>
+      <div class="hero-art rv"><img src="assets/mark-720.png" width="340" height="270" alt="Holdora mark: two raised hands in pixel form"></div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="tiles" id="slot-tiles"><!--@tiles--></div>
+
+    <section id="market" aria-labelledby="h-market">
+      <div class="sec-head rv">
+        <div><h2 id="h-market">Solana movers</h2><p class="sub">Ten rows, ranked by volume. Holdora holds the first one.</p></div>
+        <div class="tabs" id="tabs" role="tablist" aria-label="Sort board"><button role="tab" aria-selected="true" data-sort="volume">By volume</button><button role="tab" aria-selected="false" data-sort="move">By move</button></div>
+      </div>
+      <div class="ticker rv" id="ticker" aria-label="Price ticker"></div>
+      <div class="board rv" role="table" aria-label="Solana token board"><div id="board-rows"></div><div class="err" id="board-err" role="alert"></div></div>
+    </section>
+
+    <section id="how" aria-labelledby="h-how">
+      <div class="sec-head rv"><div><h2 id="h-how">How it works</h2><p class="sub">Short version, no fine print hiding in it.</p></div></div>
+      <div class="steps">
+        <div class="step spot rv"><i>1</i><h3>Pick up a position</h3><p>Buy on Solana through a venue you trust, then check that the contract above matches the one you bought.</p></div>
+        <div class="step spot rv"><i>2</i><h3>Stay put</h3><p>Staying is the entire plan. Rewards are meant to lean toward wallets that keep their position over time.</p></div>
+        <div class="step spot rv"><i>3</i><h3>Take your share</h3><p>Exact payout terms will appear in the facts panel once the team has confirmed them.</p></div>
+      </div>
+    </section>
+
+    <section id="token" aria-labelledby="h-token">
+      <div class="panel spot rv">
+        <div><h2 id="h-token">Holdora at a glance</h2><p>Each fact on the right is either confirmed or marked pending. Nothing is filled in before it is real.</p></div>
+        <div class="chips" id="slot-chips"><!--@chips--></div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap"><span>Holdora is a community token. Nothing on this page is financial advice.</span><span><a href="#market">Board</a><a href="#how">How it works</a><a href="#top">Return upward</a></span></div>
+</footer>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
